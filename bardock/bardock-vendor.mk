@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/bin/climax_hostSW:$(TARGET_COPY_OUT_VENDOR)/bin/climax_hostSW \
-    vendor/bq/bardock/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/bq/bardock/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/bq/bardock/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/bq/bardock/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
@@ -32,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/bq/bardock/proprietary/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/bq/bardock/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
-    vendor/bq/bardock/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/bq/bardock/proprietary/vendor/firmware/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/Tfa9896.cnt \
     vendor/bq/bardock/proprietary/etc/firmware/fpchips64.b00:system/etc/firmware/fpchips64.b00 \
     vendor/bq/bardock/proprietary/etc/firmware/fpchips64.b01:system/etc/firmware/fpchips64.b01 \
@@ -62,31 +60,23 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/etc/firmware/sw_fp.b05:system/etc/firmware/sw_fp.b05 \
     vendor/bq/bardock/proprietary/etc/firmware/sw_fp.b06:system/etc/firmware/sw_fp.b06 \
     vendor/bq/bardock/proprietary/etc/firmware/sw_fp.mdt:system/etc/firmware/sw_fp.mdt \
-    vendor/bq/bardock/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/bq/bardock/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/bq/bardock/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/bq/bardock/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/bq/bardock/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/bq/bardock/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/bq/bardock/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/bq/bardock/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/bq/bardock/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/bq/bardock/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/bq/bardock/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
-    vendor/bq/bardock/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/bq/bardock/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/bq/bardock/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/bq/bardock/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/bq/bardock/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/bq/bardock/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/bq/bardock/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
-    vendor/bq/bardock/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/bq/bardock/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/bq/bardock/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/bq/bardock/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/bq/bardock/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/bq/bardock/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/bq/bardock/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/bq/bardock/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/bq/bardock/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/bq/bardock/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
@@ -134,7 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/bq/bardock/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/bq/bardock/proprietary/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
-    vendor/bq/bardock/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/bq/bardock/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
     vendor/bq/bardock/proprietary/lib64/hw/csfingerprint.default.so:system/lib64/hw/csfingerprint.default.so \
     vendor/bq/bardock/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
@@ -147,10 +136,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/bq/bardock/proprietary/lib64/libclearsight.so:system/lib64/libclearsight.so \
     vendor/bq/bardock/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
-    vendor/bq/bardock/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
-    vendor/bq/bardock/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
-    vendor/bq/bardock/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
-    vendor/bq/bardock/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/bq/bardock/proprietary/lib64/libdualcameraddm.so:system/lib64/libdualcameraddm.so \
     vendor/bq/bardock/proprietary/lib64/libgf_ca.so:system/lib64/libgf_ca.so \
     vendor/bq/bardock/proprietary/lib64/libgf_hal.so:system/lib64/libgf_hal.so \
@@ -169,7 +154,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/bq/bardock/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
     vendor/bq/bardock/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
-    vendor/bq/bardock/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/bq/bardock/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/bq/bardock/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/bq/bardock/proprietary/lib64/librcc.so:system/lib64/librcc.so \
@@ -182,11 +166,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/lib64/libts_face_beautify_jni.so:system/lib64/libts_face_beautify_jni.so \
     vendor/bq/bardock/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/bq/bardock/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
-    vendor/bq/bardock/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
-    vendor/bq/bardock/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
-    vendor/bq/bardock/proprietary/lib64/vendor.qti.gnss@1.1.so:system/lib64/vendor.qti.gnss@1.1.so \
-    vendor/bq/bardock/proprietary/lib64/vendor.qti.gnss@1.2.so:system/lib64/vendor.qti.gnss@1.2.so \
-    vendor/bq/bardock/proprietary/lib64/vendor.qti.gnss@2.0.so:system/lib64/vendor.qti.gnss@2.0.so \
     vendor/bq/bardock/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:system/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/bq/bardock/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/bq/bardock/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
@@ -200,7 +179,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
     vendor/bq/bardock/proprietary/vendor/bin/fstman:$(TARGET_COPY_OUT_VENDOR)/bin/fstman \
     vendor/bq/bardock/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
-    vendor/bq/bardock/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/bq/bardock/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/bq/bardock/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
     vendor/bq/bardock/proprietary/vendor/bin/hw/vendor.qti.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@2.0-service \
@@ -277,7 +255,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardock/proprietary/vendor/etc/drc/drc_cfg_5.1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/drc/drc_cfg_5.1.txt \
     vendor/bq/bardock/proprietary/vendor/etc/drc/drc_cfg_AZ.txt:$(TARGET_COPY_OUT_VENDOR)/etc/drc/drc_cfg_AZ.txt \
     vendor/bq/bardock/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-    vendor/bq/bardock/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/bq/bardock/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/bq/bardock/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.widevine.rc \
     vendor/bq/bardock/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
@@ -913,8 +890,6 @@ PRODUCT_PACKAGES += \
     uceShimService \
     CNEService \
     WfdService \
-    com.qualcomm.location \
-    dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     TimeService \
