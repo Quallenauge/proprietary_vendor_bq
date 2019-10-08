@@ -19,17 +19,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),bardockpro)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libbtconfigstore
-LOCAL_MODULE_OWNER := bq
-LOCAL_SRC_FILES_64 := proprietary/lib64/libbtconfigstore.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libbtconfigstore.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libdsi_netctrl
 LOCAL_MODULE_OWNER := bq
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libdsi_netctrl.so
