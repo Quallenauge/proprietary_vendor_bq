@@ -66,12 +66,15 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+    vendor/bq/bardockpro/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/bq/bardockpro/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/bq/bardockpro/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+    vendor/bq/bardockpro/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/bq/bardockpro/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/bq/bardockpro/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/bq/bardockpro/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/bq/bardockpro/proprietary/lib/extractors/libmmparserextractor.so:system/lib/extractors/libmmparserextractor.so \
     vendor/bq/bardockpro/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
@@ -134,6 +137,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
+    vendor/bq/bardockpro/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/bq/bardockpro/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/bq/bardockpro/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/bq/bardockpro/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
@@ -146,6 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib64/libts_face_beautify_jni.so:system/lib64/libts_face_beautify_jni.so \
     vendor/bq/bardockpro/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/bq/bardockpro/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
+    vendor/bq/bardockpro/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/bq/bardockpro/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:system/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/bq/bardockpro/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/bq/bardockpro/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
@@ -194,6 +199,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/product/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtutils.so \
     vendor/bq/bardockpro/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/bq/bardockpro/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.0.so \
+    vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.1.so \
+    vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.2.so \
+    vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@2.0.so \
+    vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@2.1.so \
+    vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@3.0.so \
     vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@2.0.so \
     vendor/bq/bardockpro/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
@@ -1059,6 +1070,7 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     embms \
     WfdService \
+    com.qualcomm.location \
     TimeService \
     QtiTelephonyService \
     ims \
